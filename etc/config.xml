@@ -10,7 +10,7 @@
                 <behaviour>365</behaviour>
                 <auto_hide_after>0</auto_hide_after>
                 <auto_accept>0</auto_accept>
-                <expire>0</expire>
+                <expire>1</expire>
 				<onscroll>0</onscroll>
             </general>
             <content>

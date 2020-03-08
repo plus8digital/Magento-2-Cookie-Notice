@@ -24,9 +24,8 @@ endif;
          else :
              ?>border:0px;<?php
          endif; ?>;">
-        <div class="m-message title"
-             style="font-weight:bold;width:<?php echo $width ?>;font-size:<?php echo $block->modelTitleFontSize() ?>px;color:<?php echo $block->modelTitleColor(); ?>;font-family:<?php echo $block->headerTextFontFamily(); ?>">
-            <span class="titlecookie"
+        <div id="message-custom-css" class="m-message custom-css"
+             style="width:<?php echo $width ?>;font-size:<?php echo $block->modelMessageSize(); ?>px;<?php echo($fontFamily == "'unset'" ? '' : "font-family:$fontFamily"); ?>">            <span class="titlecookie"
                   style="border-bottom: 2px solid <?php echo $block->acceptButtonBackgroundColor() ?>;">
             <?php if ( $block->getShow() == 'default' ) :
                 echo 'Cookies and Privacy';

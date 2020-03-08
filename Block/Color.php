@@ -27,7 +27,7 @@ class Color extends Field
         $html = $element->getElementHtml();
         $cpPath = $this->getViewFileUrl('Meetanshi_CookieNotice::js');
         if ( !$this->_coreRegistry->registry('colorpicker_loaded') ) {
-            $html .= '<script type="text/javascript" src="' . $cpPath . '/' . 'jscolor.js"></script>';
+//            $html .= '<script type="text/javascript" src="' . $cpPath . '/' . 'jscolor.js"></script>';
             $this->_coreRegistry->registry('colorpicker_loaded', 1);
         }
         $html .= '<script type="text/javascript">
